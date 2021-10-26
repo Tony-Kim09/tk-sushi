@@ -1,0 +1,77 @@
+/* Section Header */
+.menu-header-image{
+  padding: 0 2em;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-header-text{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2;
+  font-size: 3em;
+  color: #8d8d8d;
+}
+
+.appetizer{
+  background-image: url(../../../assets/salmon.jpg);
+}
+.sushi{
+  background-image: url(../../../assets/sushi-boat.jpg);
+}
+.sashimi{
+  background-image: url(../../../assets/gallery/sashimi.jpg);
+}
+.drinks{
+  background-image: url(../../../assets/gallery/sushi-platter.jpg);
+}
+
+/* Section Content */
+
+.menu-itemlist-container{
+  margin: 3.5em 0;
+}
+
+.menu-itemlist-image{
+  display: none;
+}
+
+@media (min-width:960px) {
+  /* Section Header */
+  .menu-header-image{
+    height: 350px;
+  }
+  
+  .menu-header-text{
+    font-size: 5em;
+  }
+
+  /* Section Content */
+
+  .menu-section-container{
+    margin: 2em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-itemlist-image{
+    display: inline-block;
+    max-width: 450px;
+  }
+  .odd-format-image{
+    margin-right: 10em;
+  }
+  .even-format-image{
+    margin-left: 10em;
+  }
+}

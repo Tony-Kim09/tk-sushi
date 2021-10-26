@@ -1,0 +1,40 @@
+.about-us-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 1em;
+}
+
+.about-us-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2em 2em 0;
+}
+
+.about-us-picture{
+  max-width: 300px;
+}
+
+.about-us-header{
+  font-size: 3.5em;
+}
+
+.about-us-text{
+  font-size: 1.25em;
+}
+
+@media (min-width: 1080px) {
+  .about-us-container{
+    flex-direction: row;
+    margin: 6em auto;
+    max-width: 1000px;
+  }
+  .about-us-text-container{
+    align-self: flex-start;
+    padding: 0 1.5em;
+  }
+}

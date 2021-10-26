@@ -1,0 +1,90 @@
+.contact-us-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-map{
+  margin: 1.25em auto;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.contact-us-text-container{
+  text-align: center;
+}
+
+.contact-us-text-header{
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+.contact-us-text-subheader{
+  font-size: 1.5em;
+}
+
+.contact-us-location-container{
+  color: var(--clr-accent);
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+.contact-us-location{
+  margin: 0;
+  padding: 0;
+  line-height: 1.25em;
+}
+
+.contact-us-text{
+  margin: 1em auto 2em;
+  font-size: 1.25em;
+  color: var(--clr-accent);
+}
+
+.contact-us-days{
+  margin: 0;
+  padding: 0;
+}
+
+.contact-us-hours{
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 800px) {
+  .contact-us-map{
+    min-width: 400px;
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .contact-us-container{
+    flex-direction: row;
+    margin: 4em auto;
+  }
+  .contact-us-map{
+    min-width: 500px;
+    min-height: 500px;
+    margin: 0;
+  }
+  .contact-us-text-container{
+    margin: 0;
+  }
+
+  .contact-us-map + .contact-us-text-container{
+    margin-left: 4em;
+  }
+
+  .contact-us-text-subheader{
+    font-size: 2em;
+  }
+  
+  .contact-us-text{
+    font-size: 1.5em;
+  }
+  .contact-us-location-container{
+    font-size: 1.5em;
+  }
+}

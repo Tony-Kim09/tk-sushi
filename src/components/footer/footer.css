@@ -1,0 +1,27 @@
+.footer-container{
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--clr-light);
+}
+
+.footer-logo{
+  max-width: 100px;
+  margin-top: 1em;
+}
+
+.footer-info{
+  text-align: center;
+  color: var(--clr-accent);
+}
+
+.footer-copyright{
+  color: var(--clr-dark);
+}
+
+.footer-number{
+  font-size: 1.1em;
+  margin: 0 auto;
+  padding: 0 auto;
+}
