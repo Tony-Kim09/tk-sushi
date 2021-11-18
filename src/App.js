@@ -6,6 +6,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MenuPage from "pages/MenuPage";
 import ContactUsPage from "pages/ContactUsPage";
 import AboutUsPage from "pages/AboutUsPage";
+import OrderNowPage from "pages/OrderNowPage";
+import CheckOutPage from "pages/CheckOutPage";
+import OrderReceivedPage from "pages/OrderReceivedPage";
 
 
 const App = () => {
@@ -21,6 +24,15 @@ const App = () => {
         </Route>
         <Route path="/about-us">
           <AboutUsPage />
+        </Route>
+        <Route path="/order-now">
+          <OrderNowPage />
+        </Route>
+        <Route path="/check-out">
+          <CheckOutPage />
+        </Route>
+        <Route path="/order-received">
+          <OrderReceivedPage />
         </Route>
         <Route path="/">
           <HomePage />

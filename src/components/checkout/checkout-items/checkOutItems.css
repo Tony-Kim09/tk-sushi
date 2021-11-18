@@ -1,0 +1,66 @@
+.checkout-container{
+  margin: 1em;
+  border: solid;
+  border-radius: 5px;
+  padding: 2em;
+  text-align: center;
+}
+
+.checkout-title{
+  color: var(--clr-accent);
+  font-weight: bold;
+  margin-bottom: 0.8em;
+}
+.no-items-container{
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2em auto;
+}
+
+.checkout-item{
+  font-size: 1.3em;
+}
+
+.check-out-price{
+  margin-left: 1em;
+}
+
+.grand-total-price{
+  font-weight: bold;
+  margin-top: 1em;
+  font-size: 2em;
+  border-bottom: solid 0.05em;
+}
+@media (min-width: 768px) {
+  .checkout-container{
+    margin: 2.5em;
+  }
+  .no-items-container{
+    font-size: 1.8em;
+    margin-top: 1em;
+  }
+  .checkout-title{
+    font-size: 2.5em;
+  }
+  .checkout-item{
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .checkout-container{
+    margin: 3em;
+  }
+  .no-items-container{
+    font-size: 2.5em;
+  }
+  .checkout-title{
+    font-size: 3.5em;
+  }
+  .checkout-item{
+    font-size: 2.2em;
+  }
+}

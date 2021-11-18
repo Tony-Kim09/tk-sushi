@@ -1,0 +1,12 @@
+.item-section-container{
+  margin-bottom: 2em;
+  width: 100%;
+}
+.item-section-title{
+  margin-bottom: 0.5em;
+  font-size: 2.7em;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: solid;
+  border-color: var(--clr-accent);
+}

@@ -17,7 +17,7 @@ const MenuSection = ({ section, items, index }) => {
             <img className="menu-itemlist-image odd-format-image" src={photos[1]} alt="Food Pic" />
             <div className="menu-itemlist-container">
               {items.map((item, index) => {
-                return <MenuItem key={index} name={item.name} price={item.price} />
+                return <MenuItem key={index} id={item.id} name={item.name} price={item.price} />
               })}
             </div>
           </div>
@@ -28,7 +28,7 @@ const MenuSection = ({ section, items, index }) => {
           <div className="menu-section-container">
             <div className="menu-itemlist-container">
               {items.map((item, index) => {
-                return <MenuItem key={index} name={item.name} price={item.price} />
+                return <MenuItem key={index} id={item.id} name={item.name} price={item.price} />
               })}
             </div>
             <img className="menu-itemlist-image even-format-image" src={photos[2]} alt="Food Pic" />

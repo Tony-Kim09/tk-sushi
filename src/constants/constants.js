@@ -9,28 +9,33 @@ export const photos = [
 ];
 
 export const appetizer = [
-  { name: "101 Seaweed Salad", price: "2.99" },
-  { name: "102 Mango Salad", price: "2.99" },
-  { name: "103 Miso Soup", price: "2.99" },
-  { name: "104 Karaage", price: "5.99" }
+  { id: 101, name: "Seaweed Salad", price: "2.99" },
+  { id: 102, name: "Mango Salad", price: "2.99" },
+  { id: 103, name: "Miso Soup", price: "2.99" },
+  { id: 104, name: "Karaage", price: "5.99" }
 ];
 
 export const sushi = [
-  { name: "201 Salmon Sushi", price: "1.99" },
-  { name: "202 Tuna Sushi", price: "2.99" },
-  { name: "203 Snapper Sushi", price: "1.99" },
-  { name: "204 Salmon Roe Sushi", price: "1.99" }
+  { id: 201, name: "Salmon Sushi", price: "1.99" },
+  { id: 202, name: "Tuna Sushi", price: "2.99" },
+  { id: 203, name: "Snapper Sushi", price: "1.99" },
+  { id: 204, name: "Salmon Rose", price: "1.99" }
 ];
 
 export const sashimi = [
-  { name: "301 Salmon Sashimi", price: "2.99" },
-  { name: "302 White Tuna Sashimi", price: "3.99" },
-  { name: "303 Surf Clam Sashimi", price: "2.99" },
-  { name: "304 Mackerel Sashimi", price: "2.99" }
+  { id: 301, name: "Salmon Sashimi", price: "2.99" },
+  { id: 302, name: "Tuna Sashimi", price: "3.99" },
+  { id: 303, name: "Surf Clam Sashimi", price: "2.99" },
+  { id: 304, name: "Mackerel Sashimi", price: "2.99" }
 ];
 
 export const drinks = [
-  { name: "401 Pop", price: "0.99" },
-  { name: "402 Green Tea", price: "1.99" },
-  { name: "403 Jasmine Tea", price: "1.99" },
+  { id: 401, name: "Pop", price: "0.99" },
+  { id: 402, name: "Green Tea", price: "1.99" },
+  { id: 403, name: "Jasmine Tea", price: "1.99" },
 ];
+
+export const menu = [["Appetizer", appetizer],
+["Sushi", sushi],
+["Sashimi", sashimi],
+["Drinks", drinks]];

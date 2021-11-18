@@ -1,0 +1,35 @@
+.item-list-container{
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.check-cart-button{
+  border: none;
+  border-radius: 50px;
+  background-color: var(--clr-accent);
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 0.3em 0.6em;
+}
+
+.check-cart-button:hover{
+  transform: scale(1.1);
+}
+
+
+@media (min-width: 700px) {
+  .item-list-container{
+    margin: 5em auto;
+    max-width: 650px;
+  }
+}
+
+/* @media (min-width:2440px) {
+  .item-list-container{
+    font-size: 2.5em;
+    max-width: 1000px;
+  }
+} */

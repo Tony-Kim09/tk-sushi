@@ -2,6 +2,8 @@ import React from 'react'
 import SushiLogo from '../../assets/SushiLogo.png'
 import { Link } from 'react-router-dom'
 import './navBar.css'
+import { FaShoppingCart } from "react-icons/fa";
+import { useSelector } from 'react-redux';
 
 const NavBar = () => {
 
@@ -13,6 +15,9 @@ const NavBar = () => {
     event.preventDefault();
     document.body.classList.toggle("nav-open");
   }
+
+  const itemsInCart = useSelector(state => state);
+  const numOfItems = itemsInCart.length;
 
   return (
     <div className="nav-bar" id="header">
@@ -37,6 +42,20 @@ const NavBar = () => {
           </li>
           <li className="nav-item" onClick={closeMenu}>
             <Link className="nav-link" to="/contact-us">Contact Us</Link>
+          </li>
+          <li className="nav-item nav-order-now" onClick={closeMenu}>
+            <Link className="nav-link" to="/order-now">Order Now</Link>
+          </li>
+          <li className="nav-item nav-check-out" onClick={closeMenu}>
+            <Link className="nav-link" to="check-out">
+              <FaShoppingCart className="cart-icon" />
+
+              {numOfItems > 0 ?
+                <div className="checkout-item-number">{numOfItems}</div> :
+                null
+              }
+
+            </Link>
           </li>
         </ul>
       </nav>
