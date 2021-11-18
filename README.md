@@ -2,4 +2,4 @@
 
 ##Demo URL
 
-https://tk-sushi.herokuapp.com/
+https://tk-sushi.netlify.app/
