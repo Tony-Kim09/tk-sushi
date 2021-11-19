@@ -1,9 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router'
 import './checkOutButton.css'
 
-const CheckOutButton = ({ itemListLength }) => {
+const CheckOutButton = () => {
   const history = useHistory();
+  const itemList = useSelector(state => state);
+  const itemListLength = itemList.length;
 
   const checkOutButtonHandler = () => {
     history.push("/order-received");

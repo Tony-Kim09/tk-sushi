@@ -34,6 +34,9 @@
   font-size: 2em;
   border-bottom: solid 0.05em;
 }
+.hide-component{
+  display:none;
+}
 @media (min-width: 768px) {
   .checkout-container{
     margin: 2.5em;
