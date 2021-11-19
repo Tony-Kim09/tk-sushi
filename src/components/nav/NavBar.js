@@ -21,9 +21,9 @@ const NavBar = () => {
 
   return (
     <div className="nav-bar" id="header">
-      <div className="logo">
+      <div className="logo-container">
         <Link className="nav-link" to="/" >
-          <img src={SushiLogo} alt="SushiLogo" style={{ width: 50 }} />
+          <img src={SushiLogo} alt="SushiLogo" className="logo" />
         </Link>
       </div>
       <button className="nav-toggle" aria-label="toggle navigation" onClick={toggleNavList}>

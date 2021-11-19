@@ -38,7 +38,7 @@
   }
 }
 
-/* @media (min-width:2440px) {
+@media (min-width:2560px) {
   .decrease-quantity-button, .increase-quantity-button{
     width: fit-content;
     height: fit-content;
@@ -47,4 +47,4 @@
     width: 30px;
     height: 30px;
   }
-} */
+}

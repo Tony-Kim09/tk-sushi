@@ -50,3 +50,14 @@
     font-size: 4em;
   }
 }
+
+@media (min-width: 2560px) {
+  .intro-container{
+    height: 1440px;
+  }
+
+  .intro-text{
+    font-size: 6.5em;
+  }
+  
+}

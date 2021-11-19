@@ -16,3 +16,9 @@
 .make-invisible{
   display: none;
 }
+
+@media (min-width: 2560px) {
+  .checkout-button{
+    font-size: 3em;
+  }
+}

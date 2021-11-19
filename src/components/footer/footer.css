@@ -7,7 +7,7 @@
 }
 
 .footer-logo{
-  max-width: 100px;
+  width: 75px;
   margin-top: 1em;
 }
 
@@ -24,4 +24,22 @@
   font-size: 1.1em;
   margin: 0 auto;
   padding: 0 auto;
+}
+
+@media (min-width: 2560px) {
+  .footer-logo{
+    width: 175px;
+  }
+  .footer-title{
+    font-size: 6em;
+  }
+  .footer-info{
+    font-size: 2.2em;
+  }
+  .footer-number{
+    font-size: 2.2em;
+  }
+  .footer-copyright{
+    font-size: 2em
+  }
 }

@@ -36,4 +36,24 @@
   letter-spacing: 2px;
   font-weight: var(--fw-bold);  
   margin-bottom: 1em;
+  border-radius: 50px;
+}
+
+@media (min-width: 2560px) {
+  .services-title{
+    font-size: 7em;
+    margin-bottom: 0.5em;
+  }
+  .services-subtitle{
+    font-size: 5em;
+  }
+  .dine-in-text{
+    font-size: 3em;
+  }
+  .services-takeout-title{
+    font-size: 5em;
+  }
+  .services-takeout-button{
+    font-size: 2em;
+  }
 }

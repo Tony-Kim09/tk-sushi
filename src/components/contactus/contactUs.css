@@ -87,4 +87,32 @@
   .contact-us-location-container{
     font-size: 1.5em;
   }
+  .contact-us-days{
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 2560px) {
+  .contact-us-map{
+    min-width: 1000px;
+    min-height: 1000px;
+  }
+
+  .contact-us-map + .contact-us-text-container{
+    margin-left: 10em;
+  }
+
+  .contact-us-text-header{
+    font-size: 7em;
+  }
+  .contact-us-text-subheader{
+    font-size: 5em;
+  }
+  
+  .contact-us-text{
+    font-size: 3em;
+  }
+  .contact-us-location-container{
+    font-size: 3em;
+  }
 }

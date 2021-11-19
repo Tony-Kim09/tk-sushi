@@ -67,3 +67,19 @@
     font-size: 2.2em;
   }
 }
+
+@media (min-width: 2560px) {
+  .no-items-container{
+    font-size: 5em;
+  }
+  .checkout-title{
+    font-size: 5em;
+    margin-bottom: 0.7em;
+  }
+  .checkout-item{
+    font-size: 3.2em;
+  }
+  .grand-total-price{
+    font-size: 4em;
+  }
+}

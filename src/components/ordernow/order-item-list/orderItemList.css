@@ -9,9 +9,10 @@
 .check-cart-button{
   border: none;
   border-radius: 50px;
-  background-color: var(--clr-accent);
+  background-color: black;
   font-size: 1.4em;
   font-weight: bold;
+  color: var(--clr-accent);
   padding: 0.3em 0.6em;
 }
 
@@ -27,9 +28,9 @@
   }
 }
 
-/* @media (min-width:2440px) {
+@media (min-width:2560px) {
   .item-list-container{
     font-size: 2.5em;
     max-width: 1000px;
   }
-} */
+}

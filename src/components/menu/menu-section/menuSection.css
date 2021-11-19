@@ -75,3 +75,15 @@
     margin-left: 10em;
   }
 }
+
+@media (min-width:2560px) {
+  .menu-header-image{
+    height: 500px;
+  }
+  .menu-header-text{
+    font-size: 8em;
+  }
+  .menu-itemlist-image{
+    max-width: 750px;
+  }
+}

@@ -25,12 +25,12 @@
   font-size: 3em;
   color: var(--clr-light);
   opacity: 0.5;
+  z-index: 5000;
 }
 
 .gallery-prev-button{
   margin-right: 1em;
 }
-
 
 
 @media (min-width: 800px) {
@@ -40,7 +40,6 @@
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 3em;
     color: var(--clr-light);
     opacity: 0.5;
   }
@@ -51,5 +50,25 @@
   
   .gallery-next-button{
     left: 300px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .gallery-title{
+    font-size: 6em;
+  }
+  .gallery-img{
+    max-width: 1440px;
+  }
+  .gallery-prev-button, .gallery-next-button {
+    font-size: 8em;
+  }
+  .gallery-prev-button{
+    right: 800px;
+    top: -600px;
+  }
+  .gallery-next-button{
+    left: 800px;
+    top: -600px;
   }
 }
