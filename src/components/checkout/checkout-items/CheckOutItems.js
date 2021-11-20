@@ -8,7 +8,7 @@ const CheckOutItems = () => {
   const itemListLength = itemList.length;
 
   const grandTotalReducer = (prev, curr) => prev + curr;
-  const grandTotalPrice = itemListLength ? itemList.map(item => Number(item.price))
+  const grandTotalPrice = itemListLength ? itemList.map(item => Number(item.price) * Number(item.quantity))
     .reduce(grandTotalReducer) : 0;
 
 
@@ -25,7 +25,7 @@ const CheckOutItems = () => {
           : <div className="no-items-container">No items added yet! <br />
             Click on "Order Now" to add items</div>
       }
-      <h3 className={itemListLength > 0 ? "grand-total-price" : "hide-component"}>Grand Total: ${grandTotalPrice}</h3>
+      <h3 className={itemListLength > 0 ? "grand-total-price" : "hide-component"}>Grand Total: ${grandTotalPrice.toFixed(2)}</h3>
       <CheckOutButton itemListLength={itemListLength} />
     </div>
   )

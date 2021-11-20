@@ -14,6 +14,9 @@ const orderReducer = (state = [], action) => {
         quantity
       };
       return [...state, newOrder];
+    case 'RESET_CART':
+      const reset = [];
+      return reset;
     default:
       return state;
   }

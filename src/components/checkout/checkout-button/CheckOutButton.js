@@ -1,4 +1,6 @@
+import { resetCart } from 'actions/orderActions'
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router'
 import './checkOutButton.css'
@@ -7,8 +9,10 @@ const CheckOutButton = () => {
   const history = useHistory();
   const itemList = useSelector(state => state);
   const itemListLength = itemList.length;
+  const dispatch = useDispatch();
 
   const checkOutButtonHandler = () => {
+    dispatch(resetCart());
     history.push("/order-received");
   }
 
