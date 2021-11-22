@@ -30,6 +30,7 @@
   color: var(--clr-light);
   padding: 0.5em 0.75em;
   font-weight: bold;
+  font-size: 1.15em;
 }
 
 @media (min-width: 700px) {
