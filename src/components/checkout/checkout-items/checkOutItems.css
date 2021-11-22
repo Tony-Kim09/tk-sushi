@@ -65,7 +65,10 @@
     font-size: 3.5em;
   }
   .checkout-item{
-    font-size: 2.2em;
+    font-size: 2em;
+  }
+  .grand-total-price{
+    font-size: 2.5em;
   }
 }
 
