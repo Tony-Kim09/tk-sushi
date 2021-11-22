@@ -3,6 +3,7 @@ import OrderItemSection from '../order-item-section/OrderItemSection'
 import { menu } from 'constants/constants'
 import './orderItemList.css'
 import { useHistory } from 'react-router'
+import Notification from 'components/notification/Notification'
 
 const OrderItemList = () => {
   const history = useHistory();
@@ -12,6 +13,7 @@ const OrderItemList = () => {
 
   return (
     <div className="item-list-container">
+      <Notification />
       {
         menu.map((item, index) => {
           return <OrderItemSection key={index} title={item[0]} items={item[1]} />

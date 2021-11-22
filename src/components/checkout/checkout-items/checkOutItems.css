@@ -30,6 +30,7 @@
 
 .grand-total-price{
   font-weight: bold;
+  padding-bottom: 0.5em;
   margin-top: 1em;
   font-size: 2em;
   border-bottom: solid 0.05em;

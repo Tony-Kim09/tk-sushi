@@ -7,7 +7,7 @@ import './checkOutButton.css'
 
 const CheckOutButton = () => {
   const history = useHistory();
-  const itemList = useSelector(state => state);
+  const itemList = useSelector(state => state.orders);
   const itemListLength = itemList.length;
   const dispatch = useDispatch();
 

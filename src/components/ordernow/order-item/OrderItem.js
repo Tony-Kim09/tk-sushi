@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useDispatch } from 'react-redux'
 import { addToOrder } from 'actions/orderActions';
+import { setNotification } from 'actions/notificationActions';
 import './orderItem.css'
 import { FaPlus, FaMinus } from "react-icons/fa";
 
@@ -30,6 +31,7 @@ const OrderItem = ({ item }) => {
       dispatch(addToOrder(
         newItem
       ))
+      dispatch(setNotification(`${quantity} orders of ${item.name} has been added!`, 2000));
       setQuantity(0);
     }
   }

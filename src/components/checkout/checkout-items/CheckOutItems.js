@@ -4,7 +4,7 @@ import CheckOutButton from '../checkout-button/CheckOutButton';
 import './checkOutItems.css'
 
 const CheckOutItems = () => {
-  const itemList = useSelector(state => state);
+  const itemList = useSelector(state => state.orders);
   const itemListLength = itemList.length;
 
   const grandTotalReducer = (prev, curr) => prev + curr;

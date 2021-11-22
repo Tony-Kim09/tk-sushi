@@ -16,7 +16,7 @@ const NavBar = () => {
     document.body.classList.toggle("nav-open");
   }
 
-  const itemsInCart = useSelector(state => state);
+  const itemsInCart = useSelector(state => state.orders);
   const numOfItems = itemsInCart.length;
 
   return (
