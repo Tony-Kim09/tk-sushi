@@ -48,7 +48,7 @@ const OrderItem = ({ item }) => {
         </div>
       </div>
       <div className="add-button-container">
-        <button className={quantity !== 0 ? "add-to-order-button" : "hide-button"} onClick={addOrder}>Add to Order</button>
+        {quantity ? <button className="add-to-order-button" onClick={addOrder}>Add to Order</button> : null}
       </div>
     </>
   )

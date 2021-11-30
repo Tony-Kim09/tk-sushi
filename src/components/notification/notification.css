@@ -1,6 +1,6 @@
 .notification-container{
   position: fixed;
-  bottom: 55px;
+  bottom: 75px;
   font-size: 1.25em;
   background-color: #00802b;
   color: var(--clr-light);
@@ -8,6 +8,11 @@
   padding: 0.5em 1em;
   text-align: center;
   z-index: 5000;
+  animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0);  
+  -webkit-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Firefox < 16 */
+  -ms-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Internet Explorer */
+  -o-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Opera < 12.1 */
 }
 
 .notification-success{
@@ -17,11 +22,71 @@
   margin-right: 10px;
 }
 
+@keyframes slidein {
+  from { bottom: -15%; }
+  to   { bottom: 75px; }
+}
+/* Firefox < 16 */
+@-moz-keyframes slidein {
+  from { bottom: -15%; }
+  to   { bottom: 75px; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slidein {
+  from { bottom: -15%; }
+  to   { bottom: 75px; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slidein {
+  from { bottom: -15%; }
+  to   { bottom: 75px; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slidein {
+  from { bottom: -15%; }
+  to   { bottom: 75px; }
+}
+
 @media (min-width: 1024px) {
   .notification-container{
-    right: 50px;
+    right: 55px;
     top: 150px;
-    bottom:unset;
+    bottom: unset;
+    animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0);  
+    -webkit-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Firefox < 16 */
+    -ms-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Internet Explorer */
+    -o-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Opera < 12.1 */
+  }
+  @keyframes slidein {
+    from { right: -25%; }
+    to   { right: 55px; }
+  }
+  /* Firefox < 16 */
+  @-moz-keyframes slidein {
+    from { right: -25%; }
+    to   { right: 55px; }
+  }
+  
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes slidein {
+    from { right: -25%; }
+    to   { right: 55px; }
+  }
+  
+  /* Internet Explorer */
+  @-ms-keyframes slidein {
+    from { right: -25%; }
+    to   { right: 55px; }
+  }
+  
+  /* Opera < 12.1 */
+  @-o-keyframes slidein {
+    from { right: -25%; }
+    to   { right: 55px; }
   }
 }
 

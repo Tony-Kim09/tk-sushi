@@ -11,19 +11,18 @@ const Gallery = () => {
     event.preventDefault();
     setCurrentImageIndex((currentImageIndex + 1) % photos.length);
   }
-  
+
   const changeToPrevImage = (event) => {
     event.preventDefault();
-    setCurrentImageIndex((currentImageIndex - 1) < 0 ? photos.length-1 : currentImageIndex-1);
+    setCurrentImageIndex((currentImageIndex - 1) < 0 ? photos.length - 1 : currentImageIndex - 1);
   }
   return (
     <div className="gallery-container">
-      <h2 className="gallery-title">Our Gallery</h2>
-      <img className="gallery-img" src={photos[currentImageIndex]} alt="Gallery"/>
+      <img className="gallery-img" src={photos[currentImageIndex]} alt="Gallery" />
       <div className="gallery-button-container">
-        <button className="gallery-prev-button" onClick={changeToPrevImage}><BsFillCaretLeftFill/></button>
-        <button className="gallery-next-button" onClick={changeToNextImage}><BsFillCaretRightFill/></button>
-      </div>  
+        <button className="gallery-prev-button" onClick={changeToPrevImage}><BsFillCaretLeftFill /></button>
+        <button className="gallery-next-button" onClick={changeToNextImage}><BsFillCaretRightFill /></button>
+      </div>
     </div>
   )
 }

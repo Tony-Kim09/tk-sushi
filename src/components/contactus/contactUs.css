@@ -57,6 +57,9 @@
     min-width: 400px;
     min-height: 400px;
   }
+  .contact-us-text-header{
+    font-size: 2em;
+  }
 }
 
 @media (min-width: 1080px) {

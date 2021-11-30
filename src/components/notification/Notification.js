@@ -9,7 +9,7 @@ const Notification = () => {
   return (
     <>
       {notification ?
-        <div className={notification ? "notification-container" : null}>
+        <div className={notification ? "notification-container" : "hide-notification"}>
           <FiCheckCircle className="notification-success" /> {notification.message}
         </div>
         : null
