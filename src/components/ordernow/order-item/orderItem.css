@@ -18,9 +18,9 @@
   flex-direction: row;
   justify-content: center;
   margin: 0.5em auto;
+
 }
 .add-to-order-button{
-  position: relative;
   border: 1px solid;
   border-radius: 25px;
   background-color: var(--clr-accent);
@@ -28,44 +28,40 @@
   padding: 0.5em 0.75em;
   font-weight: bold;
   font-size: 1.15em;
-
-  /* Animation */
-
-  animation: slidein 1s cubic-bezier(0.25, 0.1, 0.25, 1.0);  
-  -webkit-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Firefox < 16 */
-  -ms-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Internet Explorer */
-  -o-animation: slidein 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Opera < 12.1 */
+  animation: fadedin 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0);  
+  -webkit-animation: fadedin 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadedin 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Firefox < 16 */
+  -ms-animation: fadedin 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Internet Explorer */
+  -o-animation: fadedin 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Opera < 12.1 */
+}
+@keyframes fadedin {
+  from { opacity:0%; }
+  to   { opacity: 100%; }
 }
 
-@keyframes slidein {
-  from { margin-left: 100%; }
-  to   { margin-left: 0%; }
-}
 /* Firefox < 16 */
-@-moz-keyframes slidein {
-  from { top: -15%; }
-  to   { top: 75px; }
+@-moz-keyframes fadedin {
+  from { opacity:0%; }
+  to   { opacity: 100%; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes slidein {
-  from { top: -15%; }
-  to   { top: 75px; }
+@-webkit-keyframes fadedin {
+  from { opacity:0%; }
+  to   { opacity: 100%; }
 }
 
 /* Internet Explorer */
-@-ms-keyframes slidein {
-  from { top: -15%; }
-  to   { top: 75px; }
+@-ms-keyframes fadedin {
+  from { opacity:0%; }
+  to   { opacity: 100%; }
 }
 
 /* Opera < 12.1 */
-@-o-keyframes slidein {
-  from { top: -15%; }
-  to   { top: 75px; }
+@-o-keyframes fadedin {
+  from { opacity:0%; }
+  to   { opacity: 100%; }
 }
-
 
 @media (min-width: 700px) {
   .add-to-order-button{

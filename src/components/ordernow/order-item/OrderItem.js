@@ -39,7 +39,7 @@ const OrderItem = ({ item }) => {
     <>
       <div className="order-item-container">
         <div className="order-item-text">
-          {item.id} {item.name} - {item.price}
+          {item.id} {item.name} - <i>{item.price}</i>
         </div>
         <div className="order-quantity-text">
           <button className="decrease-quantity-button" disabled={quantity < 1} onClick={decreaseQuantity}><FaMinus className="decrease-icon" /></button>
