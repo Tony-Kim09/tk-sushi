@@ -13,10 +13,10 @@ It has a minimalistic design with a simple UI for users to easily navigate. I us
 This is a fully responsive application from mobile to 4k. 
 
 ## Desktop View
-![Desktop](https://github.com/Tony-Kim09/tk-sushi/blob/dev/src/assets/demo/desktop-res.PNG)
+![Desktop](https://github.com/Tony-Kim09/tk-sushi/blob/main/demo/desktop-res.PNG)
 
 ## Tablet View
-![Tablet](https://github.com/Tony-Kim09/tk-sushi/blob/dev/src/assets/demo/tablet-res.PNG)
+![Tablet](https://github.com/Tony-Kim09/tk-sushi/blob/main/demo/tablet-res.PNG)
 
 ## Mobile View
-![Mobile](https://github.com/Tony-Kim09/tk-sushi/blob/dev/src/assets/demo/mobile-res.PNG)
+![Mobile](https://github.com/Tony-Kim09/tk-sushi/blob/main/demo/mobile-res.PNG)
